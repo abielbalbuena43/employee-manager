@@ -1,0 +1,14 @@
+
+<div class="employee-list">
+    <div class="employee-card" *ngFor="let employee of employees">
+      <h3>{{ employee.FirstName }} {{ employee.LastName }}</h3>
+      <img [src]="employee.Picture" alt="Employee Picture">
+      <p>Employee Number: {{ employee.EmployeeNumber }}</p>
+      <p>Birthday: {{ employee.Birthday | date }}</p>
+      <p>Gender: {{ employee.Gender }}</p>
+      <div class="employee-actions">
+        <button class="edit" (click)="editEmployee(employee)">Edit</button>
+        <button class="delete" (click)="deleteEmployee(employee)">Delete</button>
+      </div>
+    </div>
+  </div>

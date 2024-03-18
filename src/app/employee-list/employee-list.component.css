@@ -1,0 +1,44 @@
+.employee-list {
+    margin-bottom: 20px;
+  }
+  
+  .employee-card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .employee-card h3 {
+    margin-top: 0;
+  }
+  
+  .employee-card img {
+    max-width: 100%;
+    border-radius: 5px;
+  }
+  
+  .employee-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  
+  .employee-actions button {
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  .employee-actions button.edit {
+    background-color: #ffc107;
+  }
+  
+  .employee-actions button.delete {
+    background-color: #dc3545;
+    color: white;
+  }
+  
+  .employee-actions button:hover {
+    opacity: 0.8;
+  }
